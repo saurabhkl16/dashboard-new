@@ -1,0 +1,28 @@
+.file-container {
+  width: 450px;
+
+  .file {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px dotted black;
+    border-radius: 10px;
+  }
+}
+
+input::file-selector-button {
+  font-weight: bold;
+  color: black;
+  padding: 0.5em;
+  border: thin solid grey;
+  border-radius: 8px;
+}
+
+mat-dialog-actions {
+  justify-content: center;
+}
+
+mat-icon {
+  display: flex;
+  justify-content: right;
+}

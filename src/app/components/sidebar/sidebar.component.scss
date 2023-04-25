@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Changa+One&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons");
+
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+mat-icon {
+  color: rgb(112, 108, 108);
+  font-family: "Material Icons";
+  vertical-align: middle;
+}
+.user {
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 50px;
+  img {
+    margin-top: 16px;
+    height: 100px;
+  }
+  .name {
+    color: white;
+  }
+  .mail {
+    color: rgb(180, 175, 175);
+  }
+}
+
+.menu-head {
+  text-align: center;
+  color: rgb(33, 199, 202);
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  .menu-btn {
+    border: none;
+    background-color: black;
+    display: block;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    margin-bottom: 20px;
+  }
+
+  .menu-btn span {
+    color: white;
+    margin-left: 10px;
+  }
+  .menu-btn:hover {
+    cursor: pointer;
+    background-color: rgb(44, 44, 44);
+  }
+  .menu-btn:focus {
+    background-color: rgb(44, 44, 44);
+  }
+}

@@ -1,0 +1,30 @@
+<button style="float: right; margin: 5px" matDialogClose>
+  <mat-icon>close</mat-icon>
+</button>
+<mat-dialog-content>
+  <h1><b>Upload File</b></h1>
+  <div class="file-container">
+    <input
+      type="file"
+      id="upload"
+      class="file"
+      accept=".csv"
+      (change)="getFileDetails($event)"
+    />
+    <h6 style="color: red; text-align: center">*Only .csv file accept</h6>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="drawBarGraph()"
+    matDialogClose
+    [disabled]="disableGenGraphBtn"
+    [routerLink]="['/dashboard']"
+  >
+    Generate Graph
+  </button>
+  <button mat-raised-button color="warn" matDialogClose>Cancel</button>
+</mat-dialog-actions>
+<figure id="bar"></figure>
